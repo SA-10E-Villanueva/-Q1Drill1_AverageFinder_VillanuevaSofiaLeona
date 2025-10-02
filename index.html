@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you Need to Lock In?</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Helvetica;
+            background-color: #edf4f7;
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #22c5aa;
+        }
+
+            h4 {
+            text-align: center;
+            color: #22c5aa;
+        }
+
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #22c5aa;
+            color: white;
+            font-family: Helvetica;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #30927d;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: #bebc27;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Do you Need to Lock In?</h2>
+<b></b><h4>Are you high-key failing? Input your grades below to find out.</h4>
+
+    <p>1st Quarter:</p>
+    <input id="Q1" type="text">
+
+    <p>2nd Quarter:</p>
+    <input id="Q2" type="text">
+
+    <button py-click="get_average">Click to find out your...</button>
+
+    <p>Average: <span id="average"></span></p>
+    <p>My Advice: <span id="result"></span></p>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
