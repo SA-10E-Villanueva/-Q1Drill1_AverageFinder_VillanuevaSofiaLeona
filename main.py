@@ -10,10 +10,11 @@ def get_average(event):
 
     # Determine pass/fail
     if average<=85:
-        result = "You need to lock in NOW"
+        result = "You need to lock in NOW."
     else:
         result = "You still need to lock in but I guess you're sort of fine...🥀"
 
     # Display results
     document.getElementById("average").innerText = str(round(average, 2))
     document.getElementById("result").innerText = result
+
